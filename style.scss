@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Anton', sans-serif;
+}
+
+body{
+    height: 100%;
+    background-color: #0093E9;
+}
+
+form{
+    padding: 10px;
+    width: 400px;
+    height: 250px;
+    border-radius: 10px;
+    margin: 200px auto;
+    text-align: center;
+    background-color: rgb(78, 78, 78);
+    border:none;
+}
+
+input{
+    display: block;
+    margin: 20px auto;
+    width: 250px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+}
