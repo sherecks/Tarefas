@@ -9,21 +9,44 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
     
     <title>Work - Space</title>
 
 </head>
 <body>
     
-
-    <form>
-        <h3>Login</h3>
-        <input type="text" placeholder="Login" id="login">
-        <input type="text" placeholder="Senha" id="senha">
-        <input type="submit" onclick="logar(); return false">
-    </form>
-
-    <script src="login.js"></script>
-    
+    <div class='container'>
+        <div class='card'>
+          <h1> Entrar </h1>
+          
+          <div id='msgError'></div>
+          
+          <div class='label-float'>
+            <input type='text' id='usuario' paceholder='' required>
+            <label id='userLabel' for='usuario'>Usuario</label>
+          </div>
+          
+          <div class='label-float'>
+            <input type='password' id='senha' paceholder='' required>
+            <label id='senhaLabel' for='senha'>Senha</label>
+            <i class="fa fa-eye" aria-hidden="true"></i>
+          </div>
+          
+          <div class='justify-center'>
+            <button onclick='entrar()'>Entrar</button>
+          </div>
+          
+          <div class='justify-center'>
+            <hr>
+          </div>
+          
+          <p> Não tem uma conta?
+            <a href='cadastro.html'> Cadastre-se </a>
+          </p>
+          
+        </div>
+        </div>
+        <script src="login.js"></script>
 </body>
 </html>
