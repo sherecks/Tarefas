@@ -1,10 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
 *{
-    font-family: 'Anton', sans-serif;
+    font-family: 'Fredoka One', cursive;
 }
+
 body{
     height: 100%;
     background-color: #0093E9;
+    text-align: center;
+    margin: 0px;
 }
+
+header{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    padding-top: 20px;
+    margin-left: 400px;
+    margin-right: 400px;
+    margin-top: 0;
+}
+
+.bolao {
+    display: flex;
+}
+  
+  .bolao .bolas {
+    display: block;
+    color: #272262;
+    font-size: 30px;
+    width:45px;
+    height: 45px;
+    background-color: #ffffff80;
+    line-height: 45px;
+    border-radius: 50%;
+    margin: 2px 4px;
+    transition: all 0.2s ease;
+}
+  
+.bolao .bolas:hover {
+    opacity: 0.7;
+    background: white;
+    width: 50px;
+    height: 50px;
+    display: block;
+    line-height: 50px;
+    border-radius: 50%;
+    margin: 2px 6px;
+    transition: all 0.2s ease;
+}
+
+
+h1{
+    color: #272262
+}  
+  
 .cont{
     background-color: #ffffff80;
     box-shadow: 3px 3px 1px 0px #00000060;
@@ -28,26 +78,30 @@ body{
     border-radius: 10px;
     outline: none;
     font-size: 20px;
-    background: black;
+    background: #272262;
     color: white;
     border: none;
 }
 
+.topo input::placeholder{
+    color: white;
+}
+
 .topo input:hover{
-    background: rgb(26, 25, 25);
+    background: #463f8b;
 }
 
 .topo button{
     width: 45px;
     border-radius: 10px;
-    background: rgb(66, 60, 60);
+    background: #272262;
     color: white;
     outline: none;
     border: none;
 }
 
 .topo button:hover{
-    background: rgb(73, 67, 67);
+    background: #463f8b;
     cursor: pointer;
 }
 
@@ -58,8 +112,8 @@ body{
 }
 
 #listatarefa li{
-    padding: 20px;
-    background: black;
+    padding: 10px;
+    background: #272262;
     border-radius: 10px;
     display: flex;
     justify-content: space-between;
@@ -75,6 +129,8 @@ body{
     width: 38px;
     height: 38px;
     cursor: pointer;
+    border: none;
+    margin: 5px;
 }
 
 .acao:hover{
@@ -101,7 +157,7 @@ body{
 #janelaedicaofundo{
     position: fixed;
     top: 0;
-    background-color: rgb(53, 52, 52);
+    background-color: #272262;
     bottom: 0;
     left: 0;
     right: 0;
@@ -121,7 +177,7 @@ body{
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background: black;
+    background: #272262;
     color: white;
     outline: none;
     cursor: pointer;
@@ -155,7 +211,7 @@ form{
 }
 
 .linha button{
-    background: black;
+    background: #272262;
     padding: 7px;
     margin-bottom: 10px;
     border-radius: 10px;
@@ -188,7 +244,7 @@ form{
 #janelaexcluirfundo{
     position: fixed;
     top: 0;
-    background-color: rgb(53, 52, 52);
+    background-color: #272262;
     bottom: 0;
     left: 0;
     right: 0;
@@ -216,7 +272,7 @@ form{
 }
 
 #apagar{
-    background: black;
+    background: #272262;
     padding: 7px;
     margin-bottom: 10px;
     border-radius: 10px;

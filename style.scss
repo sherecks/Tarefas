@@ -1,13 +1,51 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
 * {
     margin: 0;
-    padding: 0;
-    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-family: 'Fredoka One', cursive;
   }
   
   body {
     background-color: #0093E9;
+  }
+
+  header{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding-top: 20px;
+    margin-left: 400px;
+    margin-right: 400px;
+    margin-top: 0;
+  }
+
+  ul {
+    display: flex;
+  }
+  
+  ul li {
+    display: block;
+    color: #272262;
+    font-size: 30px;
+    width:45px;
+    height: 45px;
+    background-color: #ffffff80;
+    line-height: 45px;
+    border-radius: 50%;
+    margin: 2px 4px;
+    transition: all 0.2s ease;
+  }
+  
+  ul li:hover {
+    opacity: 0.7;
+    background: white;
+    width: 50px;
+    height: 50px;
+    display: block;
+    line-height: 50px;
+    border-radius: 50%;
+    margin: 2px 6px;
+    transition: all 0.2s ease;
   }
   
   .container {
@@ -58,8 +96,8 @@
   
   .label-float label{
     color: #272262;
-    pointer-event: none;
     position: absolute;
+    pointer-events: none;
     top: 0;
     left: 0;
     margin-top: 13px;
