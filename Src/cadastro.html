@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="/Style/stylecadastro.css"/>
+    <script src="https://kit.fontawesome.com/0db4c44db2.js" crossorigin="anonymous"></script>
+    <link rel="script" href="Src/cadastro.js" as="script"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+</head>
+
+<header>
+
+   <h1>Lista de Tarefas</h1>
+ 
+   <ul>
+     <a href="https://www.instagram.com/joaopedro_pn/" target="_blank"><li href="#"><i class="fab fa-instagram"></i></li></a>
+     <a href="https://www.linkedin.com/in/joão-pedro-patrício-do-nascimento-5b042a180/" target="_blank"><li href="#"><i class="fab fa-linkedin-in"></i></li></a>
+   </ul>
+ 
+ </header>
+
+<body>
+
+    <div class='container'>
+      <div class='card'>
+        <h1> Cadastrar </h1>
+        
+        <div id='msgError'></div>
+        <div id='msgSuccess'></div>
+        
+                <div class="label-float">
+                   <input type="text" id="nome" placeholder=" " required>
+                   <label id="labelNome" for="nome">Nome</label>
+                </div>
+    
+                <div class="label-float">
+                   <input type="text" id="usuario" placeholder=" " required>
+                   <label id="labelUsuario" for="usuario">Usuário</label>
+                </div>
+                
+                <div class="label-float">
+                   <input type="password" id="senha" placeholder=" " required>
+                   <label id="labelSenha" for="senha">Senha</label>
+                   <i id="verSenha" class="fa fa-eye" aria-hidden="true"></i>
+                   
+                </div>
+    
+                <div class="label-float">
+                   <input type="password" id="confirmSenha" placeholder=" " required>
+                   <label id="labelConfirmSenha" for="confirmSenha">Confirmar Senha</label>
+                   <i id="verConfirmSenha" class="fa fa-eye" aria-hidden="true"></i>
+                </div>
+                
+                <div class='justify-center'>
+                   <button onclick='cadastrar()'>Cadastrar</button>
+                </div>
+
+                <div class='justify-center'>
+                    <hr>
+                  </div>
+                  
+                  <p> Já tenho uma conta?
+                    <a href='/Src/Login.html'>Login</a>
+                  </p>
+    
+        
+      </div>
+      </div>
+
+
+      <footer>
+         <div class="footergeneral">
+             <p class="textfooter"> Design by<a class="footerinfo" href="https://www.joaopedropn.com.br/"> João Pedro</a></p>
+ 
+         </div>
+      </footer>
+
+      <script src="/Src/cadastro.js"></script>
+    </body>
+</html>

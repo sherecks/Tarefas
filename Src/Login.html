@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br"> 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Style/style.css"/>
+    <link rel="script" href="Src/login.js" as="script"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <script src="https://kit.fontawesome.com/0db4c44db2.js" crossorigin="anonymous"></script>
+    
+    <title>Login</title>
+
+</head>
+
+<header>
+
+  <h1>Lista de Tarefas</h1>
+
+  <ul>
+    <a href="https://www.instagram.com/joaopedro_pn/" target="_blank"><li href="#"><i class="fab fa-instagram"></i></li></a>
+    <a href="https://www.linkedin.com/in/joão-pedro-patrício-do-nascimento-5b042a180/" target="_blank"><li href="#"><i class="fab fa-linkedin-in"></i></li></a>
+  </ul>
+
+</header>
+
+<body>
+    
+    <div class='container'>
+        <div class='card'>
+          <h1> Entrar </h1>
+          
+          <div id='msgError'></div>
+          
+          <div class='label-float'>
+            <input type='text' id='usuario' paceholder='' required>
+            <label id='userLabel' for='usuario'>Usuario</label>
+          </div>
+          
+          <div class='label-float'>
+            <input type='password' id='senha' paceholder='' required>
+            <label id='senhaLabel' for='senha'>Senha</label>
+            <i class="fa fa-eye" aria-hidden="true"></i>
+          </div>
+          
+          <div class='justify-center'>
+            <button onclick='entrar()'>Entrar</button>
+          </div>
+          
+          <div class='justify-center'>
+            <hr>
+          </div>
+          
+          <p> Não tem uma conta?
+            <a href='/Src/cadastro.html'> Cadastre-se </a>
+          </p>
+          
+        </div>
+        </div>
+
+        <footer>
+          <div class="footergeneral">
+              <p class="textfooter"> Design by<a class="footerinfo" href="https://www.joaopedropn.com.br/"> João Pedro</a></p>
+  
+          </div>
+        </footer>
+
+        <script src="/Src/login.js"></script>
+</body>
+</html>
